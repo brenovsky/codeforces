@@ -2,38 +2,27 @@
 
 int main()
 {
-    long int n;
-    int lucky = 1;
+    long long n;
     int algarism;
+    int count = 0;
 
-    scanf("%ld", &n);
+    scanf("%lld", &n);
 
-    if (n < 10 || n % 10 == 0) {
-        printf("NO");
+    while (n != 0) {
+        algarism = n % 10;
+
+        if (algarism == 4 || algarism == 7) {
+            count += 1;
+        }
+
+        n = (n - algarism) / 10;
+    }
+
+    if (count == 4 || count == 7) {
+        printf("YES");
     }
     else {
-        while (lucky) {
-            algarism = 0;
-
-
-            while (n % 10 != 0) {
-                n -= 1;
-                algarism += 1;
-            }
-
-            if (algarism == 4 || algarism == 7) {
-                n /= 10;
-            }
-            else if  (n == 0) {
-                printf("YES");
-                lucky = 0;
-            }
-            else {
-                printf("NO");
-                lucky = 0;
-            }
-
-        }
+        printf("NO");
     }
 
     return 0;
