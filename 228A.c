@@ -7,15 +7,16 @@ int main()
 
     scanf("%ld%ld%ld%ld", &array[0], &array[1], &array[2], &array[3]);
 
-    for (int i = 0; i < 4; i++) {
+    for (int i = 0; i < 3; i++) {
         for (int j = i + 1; j < 4; j++) {
             if (array[i] == array[j]) {
+                array[j] = array[j+1];
                 count++;
             }
         }
     }
 
-    printf("%d", count);
+    printf("%d\n", count);
 
     return 0;
 }
