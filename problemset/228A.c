@@ -2,21 +2,25 @@
 
 int main()
 {
-    long int array[4];
-    int count = 0; //same color
+    long int colors[4];
+    long int aux[4];
+    int i, j;
+    int count = 0;
+    int same_color;
 
-    scanf("%ld%ld%ld%ld", &array[0], &array[1], &array[2], &array[3]);
-
-    for (int i = 0; i < 3; i++) {
-        for (int j = i + 1; j < 4; j++) {
-            if (array[i] == array[j]) {
-                array[j] = array[j+1];
-                count++;
-            }
-        }
+    for (i = 0; i < 4; i++) {
+        scanf("%ld", &colors[i]);
     }
 
-    printf("%d\n", count);
+    aux[0] = colors[0];
+
+    for (i = 1; i < 4; i++) {
+
+        aux[i] = colors[i];
+        for (j = 0; j < 4; i++) {
+            if (colors) //if ... in ... (python)
+        }
+    }
 
     return 0;
 }
