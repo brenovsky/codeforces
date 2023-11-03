@@ -1,5 +1,5 @@
 #include <stdio.h>
-//não funcionando para todos os casos
+//não funcionando para todos os casos!!
 int main()
 {
     long int colors[4];
