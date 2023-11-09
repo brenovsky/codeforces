@@ -3,7 +3,7 @@
 int main()
 {
 	int colors[4];
-	int colors2[4] = {0, 0, 0, 0};
+	int colors2[4];
 	int count = 0;
 	
 	for (int i = 0; i < 4; i += 1) {
