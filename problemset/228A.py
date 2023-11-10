@@ -1,6 +1,6 @@
 colors = list(map(int, input().split()))
 
-colors2 = [] #without repetitions
+colors2 = []
 
 counter = 0
 
