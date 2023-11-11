@@ -20,22 +20,22 @@ Click [here](https://codeforces.com/profile/brenovsky1) to access my profile!
 
 * **Done:** 17
 * **Issues Fixed:** 3
-* **Pending:** 1
+* **Pending:** 2
 
 
 #### Issue Table
-| Pending |           Title           | Level |
-|:-------:|:-------------------------:|:-----:|
-|   1A    |      Theatre Square       | 1000  |
-|  1864A  | Increasing and Decreasing |  800  |
+| Code  |           Title           | Level |
+|:-----:|:-------------------------:|:-----:|
+|  1A   |      Theatre Square       | 1000  |
+| 1864A | Increasing and Decreasing |  800  |
 
 
 #### Resolution Table
-| Done  |                Title                 | Level | Language  |
+| Code  |                Title                 | Level | Language  |
 |:-----:|:------------------------------------:|:-----:|:---------:|
 |  4A   |              Watermelon              |  800  |  :snake:  |
 |  50A  |            Domino piling             |  800  |     C     |
-|  69A  |           Young Physicist            |  800  |     C     |
+|  69A  |           Young Physicist            | 1000  |     C     |
 |  71A  |          Way Too Long Words          |  800  |  :snake:  |
 | 110A  |         Nearly Lucky Number          |  800  |     C     |
 | 158A  |              Next Round              |  800  |  :snake:  |
