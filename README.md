@@ -1,4 +1,4 @@
-# Codeforces
+# Codeforces :bar_chart:
 My solutions from Codeforces Problemset
 
 Feel free to comment on an issue or send me a direct message!
@@ -7,7 +7,7 @@ Click [here](https://codeforces.com/profile/brenovsky1) to access my profile!
 
 ***
 
-## Statistics :bar_chart:
+## Statistics :chart_with_upwards_trend:
 
 ### Captions
 
@@ -20,13 +20,13 @@ Click [here](https://codeforces.com/profile/brenovsky1) to access my profile!
 
 * **Done:** 18
 * **Issues Fixed:** 4
-* **Pending:** 2
-
+* **Pending:** 3
 
 #### Issue Table
 | Code  |           Title           | Level |
 |:-----:|:-------------------------:|:-----:|
 |  1A   |      Theatre Square       | 1000  |
+| 1666A |   Deletive Editing | 900 |
 | 1864A | Increasing and Decreasing |  800  |
 
 
