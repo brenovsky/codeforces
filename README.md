@@ -42,6 +42,7 @@ Click [here](https://codeforces.com/profile/brenovsky1) to access my profile!
 | 228A  | Is your horseshoe on the other hoof? |  800  | C :snake: |
 | 231A  |                 Team                 |  800  |  :snake:  |
 | 236A  |             Boy or Girl              |  800  |     C     |
+| 282A  |                Bit++                 |  800  |     C     |
 | 467A  |       George and Accommodation       |  800  |     C     |
 | 617A  |               Elephant               |  800  |  :snake:  |
 | 677A  |           Vanya and Fence            |  800  |     C     |
