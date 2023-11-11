@@ -18,8 +18,8 @@ Click [here](https://codeforces.com/profile/brenovsky1) to access my profile!
 
 ### Current status
 
-* **Done:** 17
-* **Issues Fixed:** 3
+* **Done:** 18
+* **Issues Fixed:** 4
 * **Pending:** 2
 
 
