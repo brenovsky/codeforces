@@ -1,27 +1,31 @@
-original = []
-word = []
+copy = []
 results = []
 
 n = int(input())
+
 
 for i in range(n):
     s = input()
     t = input()
 
-    for j in range(len(s)):
-        original.append(s[j])
-
-    for j in range(len(t)):
-        word.append(t[j])
-
-    for j in range(len(s)):
-        for k in range(len(t)):
-            if t[k] == s[j]:
-                original[j] = 0
+    j = len(s) - 1
+    word = True
+    for i in range(len(t) - 1, -1, -1):
+        count = 0
+        while j != 0:
+            if t[i] == s[j]:
+                count += 1
+                if count > 1:
+                    word = False
+                    break
                 break
+            copy.append(s[j])
+            if word:
+                j = len(s) - copy.index(s[j]) - 1
+            j -= 1
+        
+    print(word)
 
-    else:
-        results.append(0)
 
 print(results)
-#revisar
+#Ir analisando de trás pra frente e verificando se as ocorrências de T são as últimas ocorrências em S.
