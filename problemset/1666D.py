@@ -14,5 +14,14 @@ for i in range(n):
     for j in range(len(t)):
         word.append(t[j])
 
+    for j in range(len(s)):
+        for k in range(len(t)):
+            if t[k] == s[j]:
+                original[j] = 0
+                break
+
+    else:
+        results.append(0)
+
 print(results)
 #revisar
