@@ -1,48 +1,16 @@
 #include <stdio.h>
 
-int main()
-{
-    long int n, m, a;
-    int counter = 1;
-    long int A, B, C;
+int main() {
+    long long n, m, a;
+    scanf("%lld %lld %lld", &n, &m, &a);
 
-    scanf("%ld%ld%ld",&n, &m, &a);
+    long long width_flags = (n + a - 1) / a;
 
-    A = a * (n - a);
-    B = a * (m - a);
-    C = (m - a) * (n - a);
+    long long height_flags = (m + a - 1) / a;
 
-    if (A < a * a) {
-        while (A < a * a) {
-            A += a * a;
-            counter += 1;
-        }
-    }
-    else {
-        counter += 1;
-    }
+    long long total = width_flags * height_flags;
 
-    if (B < a * a) {
-        while (B < a * a) {
-            B += a * a;
-            counter += 1;
-        }
-    }
-    else {
-        counter += 1;
-    }
-
-    if (C < a * a) {
-        while (C < a * a) {
-            C += a * a;
-            counter += 1;
-        }
-    }
-    else {
-        counter += 1;
-    }
-
-    printf("%d", counter);
+    printf("%lld\n", total);
 
     return 0;
 }
