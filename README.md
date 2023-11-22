@@ -25,8 +25,7 @@ Click [here](https://codeforces.com/profile/brenovsky1) to access my profile!
 #### Issue Table
 | Code  |           Title           | Level |
 |:-----:|:-------------------------:|:-----:|
-
-| 1666D |   Deletive Editing | 900 |
+| 1666D |     Deletive Editing      |  900  |
 | 1864A | Increasing and Decreasing |  800  |
 
 
