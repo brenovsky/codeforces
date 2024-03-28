@@ -1,15 +1,23 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-    int t;
 
-    scanf("%d", &t);
+    int x, y, n;
+    int* a;
 
-    while(t > 0) {
+    scanf("%d %d %d", &x, &y, &n);
 
-        //não sei montar o algoritmo
+    a = (int*) malloc(sizeof(int) * n);
 
-        t -= 1;
-    }
+    a[0] = x;
+    a[n] = y;
+
+    //vou precisar de lista encadeada
+
+    free(a);
+
+    return 0;
+
 }
