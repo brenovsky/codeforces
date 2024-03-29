@@ -13,8 +13,16 @@ int calculoTriangular(int n) { //devolve o triangular da posição "n"
     return s;
 }
 
-void retornarCasos() {
+void retornarCaso(int* vetor, int n) {
+
     //retornar o possivel caso
+    for (int i = n - 1; i > 0; i--) {
+        vetor[i] += calculoTriangular(n - i);
+    }
+
+    for (int j = 0; j < n; j++) {
+        printf("%d ", vetor[j]);
+    }
 }
 
 int main()
@@ -22,10 +30,16 @@ int main()
 
     int x, y, n;
     int intervalo;
+    int* v;
 
     scanf("%d %d %d", &x, &y, &n);
 
     intervalo = y - x;
+
+    v = (int*) malloc(sizeof(int) * n);
+
+    v[0] = x;
+    v[n - 1] = y; //vou precisar de Lista Encadeada, para encaixar os elementos no meio disso aqui!
 
     /* conferir se o intervalo é menor do que o triangular n-1
     caso seja, não é possível montar a lista, já que, para que se mantenha as condições do enunciado,
@@ -33,9 +47,9 @@ int main()
     if (intervalo < calculoTriangular(n-1)) {
         printf("-1\n");
     } else {
-        //agora é imprimir um desses casos possíveis;
 
-        printf("existe\n");
+        retornarCaso(v, n);
+
     }
 
     return 0;
