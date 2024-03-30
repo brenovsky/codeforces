@@ -20,16 +20,18 @@ Click [here](https://codeforces.com/profile/brenovsky1) to access my profile!
 
 * **Done:** 19
 * **Issues Fixed:** 6
-* **Pending:** 1
+* **Pending:** 3
 
 #### Issue Table
-| Code  |           Title           | Level |
-|:-----:|:-------------------------:|:-----:|
-| 1666D |     Deletive Editing      |  900  |
+| Code  |      Title       | Level |
+|:-----:|:----------------:|:-----:|
+| 1921C | Sending Messages |  900  |
+| 1945B |    Fireworks     |  900  |
+| 1666D | Deletive Editing |  900  |
 
 
 #### Resolution Table
-| Code  |                Title                 | Level | Language  |
+| Code  |                 Title                | Level | Language  |
 |:-----:|:------------------------------------:|:-----:|:---------:|
 |  1A   |            Theatre Square            | 1000  |     C     |
 |  4A   |              Watermelon              |  800  |  :snake:  |
