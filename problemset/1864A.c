@@ -1,6 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef struct lista {
+    int info;
+    struct lista* prox;
+} TLista;
+
+void criarLista(TLista* lista) {
+    lista -> prox = NULL;
+}
+
+void inserirInicio(TLista* lista, int valor) {
+    TLista* novo = (TLista*) malloc(sizeof(TLista));
+
+    novo -> info = valor;
+    novo -> prox = lista -> prox;
+
+    lista -> prox = novo;
+}
+
 int calculoTriangular(int n) { //devolve o triangular da posição "n"
 
     int a = 0;
@@ -13,45 +31,58 @@ int calculoTriangular(int n) { //devolve o triangular da posição "n"
     return s;
 }
 
-void retornarCaso(int* vetor, int n) {
+void imprimirLista(TLista* lista) {
+    TLista* p;
 
-    //retornar o possivel caso
-    for (int i = n - 1; i > 0; i--) {
-        vetor[i] += calculoTriangular(n - i);
+    for (p = lista -> prox; p != NULL; p = p -> prox) {
+        printf("%d ", p -> info);
     }
-
-    for (int j = 0; j < n; j++) {
-        printf("%d ", vetor[j]);
-    }
+    printf("\n");
 }
 
-int main()
-{
+void retornarCaso(TLista* lista, int x, int y, int n) {
+    inserirInicio(lista, y);
 
-    int x, y, n;
-    int intervalo;
-    int* v;
+    TLista* p = lista -> prox;
+    int valor;
 
-    scanf("%d %d %d", &x, &y, &n);
 
-    intervalo = y - x;
+    for (int i = 1; i < n - 1; i++) {
+        valor = p -> info - i; //contador da subtração cresce 1 em 1
 
-    v = (int*) malloc(sizeof(int) * n);
+        inserirInicio(lista, valor);
 
-    v[0] = x;
-    v[n - 1] = y; //vou precisar de Lista Encadeada, para encaixar os elementos no meio disso aqui!
-
-    /* conferir se o intervalo é menor do que o triangular n-1
-    caso seja, não é possível montar a lista, já que, para que se mantenha as condições do enunciado,
-    é preciso, no mínimo, ter um intervalo total com triangulares. */
-    if (intervalo < calculoTriangular(n-1)) {
-        printf("-1\n");
-    } else {
-
-        retornarCaso(v, n);
-
+        p = lista -> prox; //ponteiro retorna para o inicio
     }
 
-    return 0;
+    inserirInicio(lista, x);
 
+    imprimirLista(lista);
+}
+
+int main() {
+    int t;
+    scanf("%d", &t);
+
+    for (int i = 0; i < t; i++) {
+
+        int x, y, n;
+        int intervalo;
+
+        TLista vetor;
+
+        scanf("%d %d %d", &x, &y, &n);
+
+        intervalo = y - x;
+
+        criarLista(&vetor);
+
+        if (intervalo < calculoTriangular(n-1)) {
+            printf("-1\n");
+        } else {
+            retornarCaso(&vetor, x, y, n);
+        }
+
+    }
+    return 0;
 }
