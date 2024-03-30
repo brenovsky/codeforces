@@ -25,7 +25,7 @@ int calculoTriangular(int n) { //devolve o triangular da posição "n"
     int s = 0;
 
     for (int i = 0; i < n; i++) {
-        a = a + 1;
+        a += 1;
         s += a;
     }
     return s;
