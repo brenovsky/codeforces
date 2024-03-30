@@ -48,7 +48,7 @@ Click [here](https://codeforces.com/profile/brenovsky1) to access my profile!
 | 791A  |         Bear and Big Brother         |  800  |     C     |
 | 977A  |          Wrong Subtraction           |  800  |  :snake:  |
 | 1030A |     In Search of an Easy Problem     |  800  |  :snake:  |
-| 1864A |      Increasing and Decreasing       |  800  |  :snake:  |
+| 1864A |      Increasing and Decreasing       |  800  | C :snake: |
 | 1866A |            Ambitious Kid             |  800  |     C     |
 
 

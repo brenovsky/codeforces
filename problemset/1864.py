@@ -16,13 +16,15 @@ def retornarCaso(lista, x, y, n):
 
     return lista
 
-x, y, n = map(int, input().split())
+t = int(input())
 
-lista = []
+for i in range(3):
+    x, y, n = map(int, input().split())
 
-intervalo = y - x
+    lista = []
 
-if intervalo < triangular(n - 1):
-    print("-1")
-else:
-    print(sorted(retornarCaso(lista, x, y, n)))
+    intervalo = y - x
+
+    if intervalo < triangular(n - 1):
+        print("-1")
+    else:
